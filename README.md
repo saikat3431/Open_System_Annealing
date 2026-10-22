@@ -120,9 +120,11 @@ This provides an unfrustrated reference model.
 
 Every distinct pair interacts with unit weight:
 
-$$
-E = \{(i,j):0\leq i<j\leq4\}.
-$$
+
+
+```math
+E = \left\lbrace (i,j) \mid 0 \leq i < j \leq 4 \right\rbrace.
+```
 
 There are ten edges. This uniform all-to-all model includes nearest-neighbor and longer-range pairs, without distance-dependent decay.
 
@@ -218,22 +220,23 @@ $$
 
 ### Mean cut value
 
-$$
-\langle C\rangle(t) = \operatorname{Tr}[\rho(t)\hat{C}].
-$$
+
+```math
+\langle C\rangle(t) = \mathrm{Tr}[\rho(t)\hat{C}].
+```
 
 This is the average cut value obtained by computational-basis measurement.
 
 ### Problem-Hamiltonian energy
 
 $$
-E_P(t) = \operatorname{Tr}[\rho(t)H_P] = -\langle C\rangle(t).
+E_P(t) = \mathrm{Tr}[\rho(t)H_P] = -\langle C\rangle(t).
 $$
 
 ### Final success probability
 
 $$
-P_{\mathrm{GS}}(T) = \operatorname{Tr}[\rho(T)\Pi_{\mathrm{GS}}].
+P_{\mathrm{GS}}(T) = \mathrm{Tr}[\rho(T)\Pi_{\mathrm{GS}}].
 $$
 
 The projector $\Pi_{\mathrm{GS}}$ includes every ground state of $H_P$. This accounts for degeneracy and gives the probability of measuring an optimal bitstring.
@@ -249,7 +252,7 @@ A residual energy close to zero indicates an average energy close to the optimum
 ### Purity
 
 $$
-\mathcal{P}(t) = \operatorname{Tr}[\rho(t)^2].
+\mathcal{P}(t) = \mathrm{Tr}[\rho(t)^2].
 $$
 
 Purity equals one for a pure state. For an $N$-spin maximally mixed state, it equals $2^{-N}$.
@@ -259,7 +262,7 @@ Purity equals one for a pure state. For an $N$-spin maximally mixed state, it eq
 The instantaneous total energy and the problem energy are distinct during the ramp:
 
 $$
-E_{\mathrm{tot}}(s) = \operatorname{Tr}[\rho(s)H(s)], \qquad E_P(s) = \operatorname{Tr}[\rho(s)H_P].
+E_{\mathrm{tot}}(s) = \mathrm{Tr}[\rho(s)H(s)], \qquad E_P(s) = \mathrm{Tr}[\rho(s)H_P].
 $$
 
 They coincide at $s=1$, when $H(1)=H_P$.
